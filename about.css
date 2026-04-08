@@ -35,21 +35,24 @@ header{
 main{
   margin-left: 50px;
   margin-right: 50px;
-  h1{
-    text-align: center;
-  }
-  .img1{
-    width: 500px;
-  }
-  p{
-    display: inline-block;
-    ul{
-       list-style-type: none;
-       a{
-         text-decoration: none;
-         color: #000000;
-       }
-     }
+  .aboutme{
+    display: flex;
+    h1{
+      text-align: center;
+    }
+    .img1{
+      width: 500px;
+    }
+    p{
+      display: inline-block;
+      ul{
+        list-style-type: none;
+        a{
+          text-decoration: none;
+          color: #000000;
+        }
+      }
+    }
   }
 }
 
