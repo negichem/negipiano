@@ -49,6 +49,7 @@ h1{
   text-align: center;
 }
 
+
 @media screen and (min-width: 768px){
  .aboutme{
     display: flex;
@@ -59,13 +60,6 @@ h1{
     p{
       display: inline-block;
     }
-    ul{
-      list-style-type: none;
-      a{
-        text-decoration: none;
-        color: #000000;
-      }
-    }
   }
   .img1{
     width: 30%;
@@ -74,12 +68,6 @@ h1{
 
   .cv{
     width: 70%;
-    ul{
-      list-style-type: none;
-      li{
-        margin-bottom: 10px;
-      }
-    }
   }
 }
 
@@ -87,31 +75,9 @@ h1{
  .aboutme{
     display: block;
  }
- .txt{
-    justify-content: center;
-    p{
-      display: inline-block;
-    }
-    ul{
-      list-style-type: none;
-      a{
-        text-decoration: none;
-        color: #000000;
-      }
-    }
-  }
-  .img1{
+ .img1{
     width: 70%;
     height: auto;
-  }
-
-  .cv{
-    ul{
-      list-style-type: none;
-      li{
-        margin-bottom: 10px;
-      }
-    }
   }
 }
 
