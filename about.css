@@ -45,41 +45,73 @@ main{
   margin-right: 50px;
 }
 
-.aboutthis > h1{
+h1{
   text-align: center;
 }
 
-.aboutme > h1{
-  text-align: center;
-}
-
-.myphoto{
-  display: flex;
-  justify-content: center;
-  p{
-    display: inline-block;
+@media screen and (min-width: 768px){
+ .aboutme{
+    display: flex;
   }
-  ul{
-    list-style-type: none;
-    a{
-      text-decoration: none;
-      color: #000000;
+ .txt{
+    justify-content: center;
+    width: 70%;
+    p{
+      display: inline-block;
+    }
+    ul{
+      list-style-type: none;
+      a{
+        text-decoration: none;
+        color: #000000;
+      }
+    }
+  }
+  .img1{
+    width: 30%;
+    height: auto;
+  }
+
+  .cv{
+    width: 70%;
+    ul{
+      list-style-type: none;
+      li{
+        margin-bottom: 10px;
+      }
     }
   }
 }
-.img1{
-  width: 500px;
-  height: auto;
-}
 
-
-.profile{
-  ul{
-    list-style-type: none;
-    li{
-      margin-bottom: 10px;
+@media screen and (max-width: 767px){
+ .aboutme{
+    display: block;
+ }
+ .txt{
+    justify-content: center;
+    p{
+      display: inline-block;
     }
+    ul{
+      list-style-type: none;
+      a{
+        text-decoration: none;
+        color: #000000;
+      }
+    }
+  }
+  .img1{
+    width: 70%;
+    height: auto;
+  }
 
+  .cv{
+    ul{
+      list-style-type: none;
+      li{
+        margin-bottom: 10px;
+      }
+    }
   }
 }
 
