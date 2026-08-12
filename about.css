@@ -61,6 +61,7 @@ h1{
 @media screen and (min-width: 768px){
   .aboutme{
     display: flex;
+    justify-content: center;
   }
   .txt{
     justify-content: center;
@@ -86,6 +87,7 @@ h1{
 @media screen and (max-width: 767px){
  .aboutme{
     display: block;
+    margin: auto;
  }
  .img1{
     width: 70%;
