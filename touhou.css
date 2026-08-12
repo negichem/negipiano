@@ -8,10 +8,12 @@
 }
 
 .mainpage{
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  grid-template-columns: 100%;
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
+}
+
+body{
   font-family: 'Noto Sans JP';
   font-size: clamp(14px, 2.5vw, 16px);
   margin: 0px;
@@ -47,10 +49,8 @@ main{
     text-align: center;
   }
 }
+
 .touhou{
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
     a{
       text-decoration: none;
       color: #107084;
@@ -62,10 +62,26 @@ main{
     }
 }
 
+@media screen and (min-width: 768px) {
+  .touhou{
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .touhou{
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+  }
+}
 
 footer{
   background-color: #456270;
   padding: 2px;
+  margin-top: auto;
   p{
     color: #ffffff;
     margin: 10px 50px 10px 50px;
