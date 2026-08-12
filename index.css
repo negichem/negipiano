@@ -1,15 +1,22 @@
-@charset"UTF-8";
+@charset"utf-8";
+
+@media screen and (min-width: 768px) {
+  padding: 32px;
+}
+@media screen and (max-width: 767px) {
+  padding: 16px;
+}
 
 body{
   font-family: 'Noto Sans JP';
+  font-size: clamp(12px, 2.5vw, 16px);
   margin: 0px;
 }
 
 .mainpage{
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  grid-template-columns: 100%;
-  min-height: 95vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 header{
@@ -40,6 +47,7 @@ main{
 
 footer{
   background-color: #456270;
+  margin-top: auto;
   padding: 2px;
   p{
     color: #ffffff;
