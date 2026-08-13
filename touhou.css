@@ -67,12 +67,12 @@ main{
       display: flex;
       justify-content: center;
       margin-top: 50px;
-      a{
-        text-decoration: none;
-        color: #107084;
-        font-size: 17px;
-        font-weight: bold;
-    　}
+  }
+  .touhou > a{
+     text-decoration: none;
+     color: #107084;
+     font-size: 17px;
+     font-weight: bold;
   }
 }
 
@@ -82,7 +82,7 @@ main{
     margin: auto;
     margin-top: 50px;
   }
-  a{
+  .touhou > a{
     text-decoration: none;
     color: #107084;
     font-size: 14px;
