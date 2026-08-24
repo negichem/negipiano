@@ -1,15 +1,22 @@
 @charset"UTF-8";
 
-body{
-  font-family: 'Noto Sans JP';
-  margin: 0px;
+@media screen and (min-width: 768px) {
+  padding: 32px;
+}
+@media screen and (max-width: 767px) {
+  padding: 16px;
 }
 
 .mainpage{
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  grid-template-columns: 100%;
-  min-height: 95vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body{
+  font-family: 'Noto Sans JP';
+  font-size: clamp(14px, 2.5vw, 16px);
+  margin: 0px;
 }
 
 header{
