@@ -1,15 +1,22 @@
-@charset"UTF-8";
+@charset"utf-8";
+
+@media screen and (min-width: 768px) {
+  padding: 32px;
+}
+@media screen and (max-width: 767px) {
+  padding: 16px;
+}
 
 body{
   font-family: 'Noto Sans JP';
+  font-size: clamp(12px, 2.5vw, 16px);
   margin: 0px;
 }
 
 .mainpage{
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  grid-template-columns: 100%;
-  min-height: 95vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 header{
@@ -35,19 +42,36 @@ header{
 main{
   margin-left: 50px;
   margin-right: 50px;
-  h1{
-    text-align: center;
-  }
+  text-align: center;
 }
-.music{
-    display: inline-block;
-    ul{
-      list-style-type: none;
+
+@media screen and (min-width: 768px){
+  .music{
+    display: flex;
+    justify-content: center;
+    a{
+      text-decoration: none;
+      color: #456270;
+      font-weight: bold;
     }
-  }
+  }  
+}
+
+@media screen and (max-width: 767px){
+  .music{
+    display: flex;
+    justify-content: center;
+    a{
+      text-decoration: none;
+      color: #456270;
+      font-weight: bold;
+    }
+  }  
+}
 
 footer{
   background-color: #456270;
+  margin-top: auto;
   padding: 2px;
   p{
     color: #ffffff;
