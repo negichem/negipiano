@@ -1,4 +1,4 @@
-@charset"UTF-8";
+@charset"utf-8";
 
 @media screen and (min-width: 768px) {
   padding: 32px;
@@ -7,10 +7,9 @@
   padding: 16px;
 }
 
-
 body{
   font-family: 'Noto Sans JP';
-  font-size: clamp(14px, 2.5vw, 16px);
+  font-size: clamp(12px, 2.5vw, 16px);
   margin: 0px;
 }
 
@@ -19,7 +18,6 @@ body{
   flex-direction: column;
   min-height: 100vh;
 }
-
 
 header{
   background-color: #456270;
@@ -44,19 +42,12 @@ header{
 main{
   margin-left: 50px;
   margin-right: 50px;
-  h1{
-    text-align: center;
-  }
+  text-align: center;
 }
-.music{
-    display: inline-block;
-    ul{
-      list-style-type: none;
-    }
-  }
 
 footer{
   background-color: #456270;
+  margin-top: auto;
   padding: 2px;
   p{
     color: #ffffff;
