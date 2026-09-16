@@ -45,28 +45,27 @@ main{
   text-align: center;
 }
 
+.music{
+  a{
+    text-decoration: none;
+    color: #456270;
+    font-weight: bold;
+  }
+}
+
 @media screen and (min-width: 768px){
   .music{
     display: flex;
     justify-content: center;
-    a{
-      text-decoration: none;
-      color: #456270;
-      font-weight: bold;
-    }
-  }  
+  }
 }
+
 
 @media screen and (max-width: 767px){
   .music{
     display: flex;
     justify-content: center;
-    a{
-      text-decoration: none;
-      color: #456270;
-      font-weight: bold;
-    }
-  }  
+  }
 }
 
 footer{
